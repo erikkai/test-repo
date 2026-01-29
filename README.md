@@ -1,7 +1,7 @@
 # test-repo
 Test 
 
-[![Link Checker](https://github.com/erikkai/telesign-appverify-jwt-service/actions/workflows/link-checker.yml/badge.svg)](https://github.com/erikkai/telesign-appverify-jwt-service/actions/workflows/link-checker.yml)
+[![Link Checker](https://github.com/erikkai/test-repo/actions/workflows/link-checker.yml/badge.svg)](https://github.com/erikkai/test-repo/actions/workflows/link-checker.yml)
 
 > **NOTE:** This is a legacy code sample showing TeleSign customers how to set up a JWT service for use with the product App Verify. Links that are dead with no redirect are removed. Some of the products described here are no longer available. This project was created to help customers see the basics for what's involved to create a JWT service.
 
@@ -14,6 +14,7 @@ There are many ways you can implement a JWT service. This document is a guide to
 
 The steps for creating a JWT service are discussed in the following sections:
 
+* [TEST](https://telesign.com/devlerpor)
 * [Requirements](#requirements)
 * [How it Works](#how-it-works)
 * [Implementation Walkthrough](#implementation-walkthrough)
