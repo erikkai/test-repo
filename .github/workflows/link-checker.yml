@@ -1,0 +1,30 @@
+name: Link Checker
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: "0 0 * * 1" # Runs every Monday
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Lychee Check
+        uses: lycheeverse/lychee-action@v2
+        id: lychee
+        with:
+          # Enabling checking of the info that comes after '#' in a link.
+          args: --verbose --no-progress --include-fragments '.'
+          # We set this to false so the workflow continues to the "File a Bug" step
+          fail: true 
+
+      - name: Create Issue if links are broken
+        # This checks the "id: lychee" output to see if it found errors
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Broken Links Found"
+          content-filepath: ./lychee/out.md
+          labels: documentation, automated-report
