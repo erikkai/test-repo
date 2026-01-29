@@ -14,7 +14,6 @@ There are many ways you can implement a JWT service. This document is a guide to
 
 The steps for creating a JWT service are discussed in the following sections:
 
-* [TEST](https://telesign.com/devlerpor)
 * [Requirements](#requirements)
 * [How it Works](#how-it-works)
 * [Implementation Walkthrough](#implementation-walkthrough)
