@@ -156,7 +156,7 @@ if __name__ == "__main__": app.run(host = '0.0.0.0')
 This section provides a list of third party resources that will help you build your own JWT service:
 
 * [www.jwt.io](https://www.jwt.io/) - jwt.io features a great debugger page. You can enter your encoded token and secret key, and the debugger will let you know if your token is formed properly.
-* [The Mongo DB Manual](https://docs.mongodb.com/docs/manual/) - A great manual for installing and configuring a MongoDB database.
+* The Mongo DB Manual - A great manual for installing and configuring a MongoDB database.
 * Getting Started with MongoDB (MongoDB Shell Edition) - Choose from Python, Node.JS, C++, Java, and C# editions.
 * [Welcome to Flask](http://flask.palletsprojects.com/en/stable/) - Everything you need to know about Flask.
 * [Flask-Limiter](https://pypi.org/project/Flask-Limiter/) - Details about Flask-Limiter, which provides rate limiting features to flask routes.
